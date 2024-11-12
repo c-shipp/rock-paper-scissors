@@ -1,5 +1,5 @@
-const choices = ["rock","paper","scissors"]
-const winners = [];
+const choices = ["rock","paper","scissors"];
+let winners = [];
 
 function game() {
     for(let i = 1; i <= 5; i++) {
@@ -46,7 +46,7 @@ function validateInput(choice) {
 
 function checkWinner(choiceP, choiceC) {
     if (choiceP === choiceC) {
-            return "Draw!";
+        return "Draw!";
     } else if (
         (choiceP === "rock" && choiceC === "scissors") ||
         (choiceP === "paper" && choiceC === "rock") ||
